@@ -18,20 +18,14 @@ class HomeView extends GetView<HomeController> {
       extendBody: true,
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(horizontal: 18),
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
                   height: getPropertionateScreenWidht(24),
-                ),
-                Text(
-                  'Selamat datang di kasir',
-                  style: primaryTextStyle.copyWith(
-                    fontWeight: semiBold,
-                    fontSize: getPropertionateScreenWidht(20),
-                  ),
                 ),
                 Text(
                   'Pallubasa Andalanga',
@@ -45,8 +39,8 @@ class HomeView extends GetView<HomeController> {
                 ),
                 Obx(
                   () => Wrap(
-                    spacing: getPropertionateScreenWidht(16),
-                    runSpacing: getPropertionateScreenWidht(16),
+                    spacing: getPropertionateScreenWidht(12),
+                    runSpacing: getPropertionateScreenWidht(12),
                     children: [
                       MenuCard(
                         title: 'Pallubasa',
@@ -299,7 +293,7 @@ class MenuCard extends StatelessWidget {
                     onTap: removeFunction,
                     child: Container(
                       width: getPropertionateScreenWidht(43),
-                      height: getPropertionateScreenHeight(43),
+                      height: getPropertionateScreenWidht(43),
                       decoration: BoxDecoration(
                         color: color,
                         borderRadius: const BorderRadius.only(
@@ -349,7 +343,7 @@ class MenuCard extends StatelessWidget {
                     ),
                     Container(
                       width: getPropertionateScreenWidht(43),
-                      height: getPropertionateScreenHeight(43),
+                      height: getPropertionateScreenWidht(43),
                       decoration: BoxDecoration(
                         color: color,
                         borderRadius: const BorderRadius.only(
