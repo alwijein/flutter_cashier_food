@@ -1,0 +1,38 @@
+name: cashier_pallubasa_andalanga
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  meta: ^1.8.0
+  freezed_annotation: ^2.2.0
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  flutter_svg: ^2.0.5
+  google_fonts: ^4.0.4
+  intl: ^0.18.1
+
+dev_dependencies: 
+  flutter_lints: 2.0.1
+  flutter_test: 
+    sdk: flutter
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+  freezed: ^2.3.2
+  flutter_launcher_icons: ^0.11.0
+
+flutter_icons: 
+  android: launcher_icon
+  image_path: assets/images/logo.png
+  ios: true
+  min_sdk_android: 21
+
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+
