@@ -23,7 +23,7 @@ Repositori ini berisi kode sumber untuk aplikasi kasir makanan yang dikembangkan
 2. **Clone Repositori**
    - Salin repositori ini dengan perintah:
      ```
-     git clone https://github.com/username/nama-repo.git
+     git clone https://github.com/alwijein/coffee_shop_v2.git
      ```
 
 3. **Buka Projek**
